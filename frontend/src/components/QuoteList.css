@@ -1,0 +1,54 @@
+.quote-list {
+  display: grid;
+  gap: 20px;
+}
+
+.quote-card {
+  background-color: white;
+  padding: 20px;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+}
+
+.quote-text {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  color: var(--text-color);
+}
+
+.quote-text::before {
+  content: '"';
+  color: var(--primary-color);
+  font-size: 1.5em;
+  margin-right: 5px;
+}
+
+.quote-text::after {
+  content: '"';
+  color: var(--primary-color);
+  font-size: 1.5em;
+  margin-left: 5px;
+}
+
+.quote-author {
+  font-style: italic;
+  color: var(--text-color);
+  opacity: 0.8;
+  margin-bottom: 10px;
+}
+
+.quote-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 15px;
+}
+
+.tag {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+} 
